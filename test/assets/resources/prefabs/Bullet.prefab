@@ -126,6 +126,9 @@
     "BulletLevel": 1,
     "BulletPosid": 1,
     "IsBulletLiZi": false,
+    "finshEnd": {
+      "__uuid__": "d7f27b85-5f00-4a51-9fbb-9fddc3b5592e"
+    },
     "_id": ""
   },
   {

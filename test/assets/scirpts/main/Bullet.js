@@ -11,7 +11,8 @@ cc.Class({
         BulletSpeed: 1,      // 子弹的速度
         BulletLevel: 1,      // 子弹等级
         BulletPosid: 1,      // 子弹所属的位置
-        IsBulletLiZi: false, // 是否是粒子炮    
+        IsBulletLiZi: false, // 是否是粒子炮   
+          
     },
 
     onLoad(){
@@ -66,13 +67,18 @@ cc.Class({
         var fish_id = FishCollider.FishID;
         var bullet_id = this.BulletID;
         console.log("-----------------fish_id----------",fish_id)
+
+        // this.createPritical();
         this.doCatchFish(bullet_id, fish_id);
-           
+      
+        cc.fish.EffectMgr.PlayEffect(this.node.pos)
     },
       // 捕获鱼
     doCatchFish(bulletid, fishid) {
          this.node.destroy();
     },
+
+   
      // 正常的子弹更新（非锁定鱼情况）
     normalUpdate() {
         var dir = new cc.Vec2(this.movedir.x * this.BulletSpeed, this.movedir.y * this.BulletSpeed)
