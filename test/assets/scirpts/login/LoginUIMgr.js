@@ -22,7 +22,10 @@ cc.Class({
     showDlgLogin(){
         var dlg = cc.instantiate(this.loginTes);
         dlg.parent = cc.login.DlgLayer;
+    },
+    showTween(){
+        var dlg = cc.instantiate(this.loginTes);
+        dlg.parent = cc.login.DlgLayer;
     }
-
     // update (dt) {},
 });

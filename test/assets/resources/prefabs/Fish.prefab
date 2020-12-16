@@ -27,10 +27,13 @@
       },
       {
         "__id__": 4
+      },
+      {
+        "__id__": 5
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 6
     },
     "_opacity": 255,
     "_color": {
@@ -134,6 +137,21 @@
     "_enabled": true,
     "FishID": 0,
     "FishKind": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "a36e2DcO/BO/JCv17ulZAZH",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "BezierPoints": [],
+    "State": 1,
+    "BezierSpeed": 1,
+    "IsCanRote": true,
+    "angle": 0,
     "_id": ""
   },
   {

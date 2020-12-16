@@ -36,7 +36,7 @@ cc.Class({
                 lock_count: 0,
             }
             this.fishes.set(fishid, fish_item);
-
+            console.log("------fish create --->")
             fishCompt.init(fishkind, fishid);
             fish.parent = cc.fish.FishLayer;
 
