@@ -21,6 +21,10 @@ cc.Class({
             default:null,
             type:cc.Button
         },
+        btn_puremvc:{
+            default:null,
+            type:cc.Button
+        },
         _starttime:0,
         _midtime:0,
         _endtime:0
@@ -34,11 +38,15 @@ cc.Class({
 
         cc.vv.utils.addClickEvent(this.loadScene,this.node,"LoginUI","onBtnLoadScene");
 
-       
+        cc.vv.utils.addClickEvent(this.btn_puremvc,this.node,"LoginUI","onBtnPureMvc");
+        
     },
 
     start () {
 
+    },
+    onBtnPureMvc(){
+        cc.director.loadScene("puremvc");
     },
     onBtnLoadScene(){
         this._starttime = new Date().getTime();
